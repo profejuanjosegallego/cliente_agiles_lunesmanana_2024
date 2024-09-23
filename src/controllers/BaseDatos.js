@@ -9,7 +9,7 @@ let gastosDos=Array(
         id:2,
         descripcion:"Empanada de pollo + cocacola zero",
         monto:10000,
-        fecha:"2024-9-20"
+        fecha:"2024-9-208"
     }
 
 )
