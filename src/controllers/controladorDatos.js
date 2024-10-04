@@ -31,15 +31,23 @@ gastos.forEach(function(gasto){
     montoGasto.textContent="$ "+gasto.monto
 
     
+    let imagen=document.createElement("img")
+    imagen.classList.add("img-fluid")
+    
+    if(gasto.categoria=="transporte"){
+        imagen.src="../../assets/img/transporte.png"
+    }else if(gasto.categoria=="comida"){
+        imagen.src="../../assets/img/food-restaurant.png"
+    }else if(gasto.categoria=="entretenimiento"){
+        imagen.src="../../assets/img/mascaradas.png"
+    }
     
     
-
-
     //3. Creando las jerarquias del modelo traversing
     //se arranca de lo mas interno hacia lo mas externo
     tarjeta.appendChild(descripcion)
     tarjeta.appendChild(montoGasto)
-    
+    tarjeta.appendChild(imagen)
     columna.appendChild(tarjeta)
     fila.appendChild(columna)
 
