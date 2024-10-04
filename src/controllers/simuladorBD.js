@@ -68,40 +68,8 @@ export let gastos=Array(
         monto:18000,
         fecha:"2024-9-21",
         categoria:"Entretenimiento"
-    },
-    {
-        id:15,
-        descripcion:"Empanada de atun",
-        monto:3000,
-        fecha:"2024-9-23",
-        categoria:"comida"
-    },
-    {
-        id:15,
-        descripcion:"Empanada de atun",
-        monto:3000,
-        fecha:"2024-9-23",
-        categoria:"comida"
-    },
-    {
-        id:15,
-        descripcion:"Empanada de atun",
-        monto:3000,
-        fecha:"2024-9-23",
-        categoria:"comida"
-    },
-    {
-        id:15,
-        descripcion:"Empanada de atun",
-        monto:3000,
-        fecha:"2024-9-23",
-        categoria:"comida"
-    },
-    {
-        id:15,
-        descripcion:"Empanada de atun",
-        monto:3000,
-        fecha:"2024-9-23",
-        categoria:"comida"
     }
+    
+    
+    
 )

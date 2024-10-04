@@ -30,11 +30,16 @@ gastos.forEach(function(gasto){
     montoGasto.classList.add("text-center","text-success")
     montoGasto.textContent="$ "+gasto.monto
 
+    
+    
+    
+
 
     //3. Creando las jerarquias del modelo traversing
     //se arranca de lo mas interno hacia lo mas externo
     tarjeta.appendChild(descripcion)
     tarjeta.appendChild(montoGasto)
+    
     columna.appendChild(tarjeta)
     fila.appendChild(columna)
 
