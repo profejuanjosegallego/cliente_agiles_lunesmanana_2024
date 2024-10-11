@@ -1,9 +1,7 @@
-import { gastos } from "./simuladorBD.js";
 
-
+//Traer los datos de la memoria y convertilos a JSON nuevamente
+let gastos=JSON.parse(sessionStorage.getItem("datos"))
 //filtros aqui
-
-
 //DOM
 let fila=document.getElementById("fila")
 
@@ -11,9 +9,7 @@ let fila=document.getElementById("fila")
 //1. Debemos recorrer un arreglo de datos
 gastos.forEach(function(gasto){
     
-
     //2. Creamos etiquetas necesarias para mostrar la info
-
     let columna=document.createElement("div")
     columna.classList.add("col")
 
@@ -25,12 +21,10 @@ gastos.forEach(function(gasto){
     //propiedad para modificar el texto de una etiqueta desde JS
     descripcion.textContent=gasto.descripcion
 
-
     let montoGasto=document.createElement("h2")
     montoGasto.classList.add("text-center","text-success")
     montoGasto.textContent="$ "+gasto.monto
 
-    
     let imagen=document.createElement("img")
     imagen.classList.add("img-fluid")
     
@@ -41,7 +35,6 @@ gastos.forEach(function(gasto){
     }else if(gasto.categoria=="entretenimiento"){
         imagen.src="../../assets/img/mascaradas.png"
     }
-    
     
     //3. Creando las jerarquias del modelo traversing
     //se arranca de lo mas interno hacia lo mas externo

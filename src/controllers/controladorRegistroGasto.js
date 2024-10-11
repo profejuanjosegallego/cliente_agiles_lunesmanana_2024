@@ -1,3 +1,8 @@
+import {gastos} from "./simuladorBD.js"
+
+//preguntarle a la memoria interna si tiene datos para pintar
+
+
 //1. Crear una variable para enlazar cada caja del formulario
 
 let descripcionInput=document.getElementById("descripcion")
@@ -18,7 +23,12 @@ botonRegistroGasto.addEventListener("click",function(evento){
         fecha:fechaInput.value
     }
 
-    console.log(gasto)
+    //Agregando el nuevo gasto al arreglo de gastos
+    gastos.push(gasto)
+    
+    //UTILIZAR LA MEMORIA DEL NAVEGADOR PARA ALMACENAR INFORMACION
+    sessionStorage.setItem("datos",JSON.stringify(gastos))
+    
     Swal.fire({
         title: "Gasto registrado con exito",
         text: "Estamos para servirte",
